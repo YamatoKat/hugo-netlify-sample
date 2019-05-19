@@ -2,40 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/post/</link>
+    <link>http://www.sayaka.work/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 09 May 2019 12:11:02 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.sayaka.work/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test2</title>
-      <link>http://example.org/post/test2/</link>
+      <link>http://www.sayaka.work/post/test2/</link>
       <pubDate>Thu, 09 May 2019 12:11:02 +0900</pubDate>
       
-      <guid>http://example.org/post/test2/</guid>
+      <guid>http://www.sayaka.work/post/test2/</guid>
       <description> Netlifyの初テスト </description>
     </item>
     
     <item>
       <title>Test1</title>
-      <link>http://example.org/post/test1/</link>
+      <link>http://www.sayaka.work/post/test1/</link>
       <pubDate>Thu, 09 May 2019 12:06:55 +0900</pubDate>
       
-      <guid>http://example.org/post/test1/</guid>
+      <guid>http://www.sayaka.work/post/test1/</guid>
       <description> テストの第２弾 </description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>http://example.org/post/test/</link>
+      <link>http://www.sayaka.work/post/test/</link>
       <pubDate>Thu, 09 May 2019 11:32:57 +0900</pubDate>
       
-      <guid>http://example.org/post/test/</guid>
+      <guid>http://www.sayaka.work/post/test/</guid>
       <description> ブログスタート！ </description>
+    </item>
+    
+    <item>
+      <title>はじめまして</title>
+      <link>http://www.sayaka.work/post/190324/</link>
+      <pubDate>Sun, 24 Mar 2019 22:36:45 +0900</pubDate>
+      
+      <guid>http://www.sayaka.work/post/190324/</guid>
+      <description>はじめまして。 神戸出身で都内在住の25歳専業主婦です。 都内に住みはじめて3年が経ちました。 主人は2つ年上の27歳九州男児。 関西にいたときに出会い、一緒に東京で就職し、 2018.5.27に入籍、2019.3.16に結婚式を挙げました。 これからは、夫婦のことについて書いていきたいと思います。 どうぞよろしくお願いします。 </description>
     </item>
     
   </channel>
