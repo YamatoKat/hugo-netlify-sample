@@ -145,6 +145,11 @@
   </url>
   
   <url>
+    <loc>http://www.sayaka.work/post/mapbox_qs/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://www.sayaka.work/categories/</loc>
     <priority>0</priority>
   </url>
