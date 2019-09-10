@@ -6,10 +6,19 @@
     <description>Recent content on 新婚夫婦日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 12:11:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 10:39:55 +0900</lastBuildDate>
     
 	<atom:link href="http://www.sayaka.work/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mapbox</title>
+      <link>http://www.sayaka.work/post/190910/</link>
+      <pubDate>Tue, 10 Sep 2019 10:39:55 +0900</pubDate>
+      
+      <guid>http://www.sayaka.work/post/190910/</guid>
+      <description>&amp;lt;!DOCTYPE html&amp;gt;       body { margin:0; padding:0; } #map { position:absolute; top:0; bottom:0; width:100%; } #reset { position: absolute; bottom: 20px; left: 20px; z-index: 999; }    reset   Driving directions Routes on the fastest roads and around traffic.   Walking directions Finds the shortest path using sidewalks and trails.   Cycling directions Chooses the safest routes by favoring streets with bike lanes.</description>
+    </item>
     
     <item>
       <title>青春１８切符の旅　神戸から東京</title>
