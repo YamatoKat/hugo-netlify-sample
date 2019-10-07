@@ -3,169 +3,149 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.sayaka.work/post/</loc>
-    <lastmod>2019-09-10T10:42:38+09:00</lastmod>
+    <loc>http://www.sayaka.work/post.html</loc>
+    <lastmod>2019-08-23T12:11:48+09:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.sayaka.work/post/190911/</loc>
-    <lastmod>2019-09-10T10:42:38+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.sayaka.work/</loc>
-    <lastmod>2019-09-10T10:42:38+09:00</lastmod>
+    <lastmod>2019-08-23T12:11:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190910/</loc>
-    <lastmod>2019-09-10T10:39:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.sayaka.work/post/190823/</loc>
+    <loc>http://www.sayaka.work/post/190823.html</loc>
     <lastmod>2019-08-23T12:11:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190821/</loc>
+    <loc>http://www.sayaka.work/post/190821.html</loc>
     <lastmod>2019-08-21T20:27:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190615/</loc>
+    <loc>http://www.sayaka.work/post/190615.html</loc>
     <lastmod>2019-06-15T19:49:02+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190610/</loc>
-    <lastmod>2019-06-10T19:49:02+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.sayaka.work/post/190616/</loc>
+    <loc>http://www.sayaka.work/post/190616.html</loc>
     <lastmod>2019-06-06T20:01:15+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190507/</loc>
+    <loc>http://www.sayaka.work/post/190507.html</loc>
     <lastmod>2019-05-07T16:52:07+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190531/</loc>
+    <loc>http://www.sayaka.work/post/190531.html</loc>
     <lastmod>2019-05-07T16:52:07+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190422/</loc>
+    <loc>http://www.sayaka.work/post/190422.html</loc>
     <lastmod>2019-04-22T16:51:22+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190419/</loc>
+    <loc>http://www.sayaka.work/post/190419.html</loc>
     <lastmod>2019-04-19T16:50:36+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190418/</loc>
+    <loc>http://www.sayaka.work/post/190418.html</loc>
     <lastmod>2019-04-18T16:49:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190417/</loc>
+    <loc>http://www.sayaka.work/post/190417.html</loc>
     <lastmod>2019-04-17T16:49:11+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190416/</loc>
+    <loc>http://www.sayaka.work/post/190416.html</loc>
     <lastmod>2019-04-16T16:48:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190412/</loc>
+    <loc>http://www.sayaka.work/post/190412.html</loc>
     <lastmod>2019-04-12T16:47:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190411/</loc>
+    <loc>http://www.sayaka.work/post/190411.html</loc>
     <lastmod>2019-04-11T16:47:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190408/</loc>
+    <loc>http://www.sayaka.work/post/190408.html</loc>
     <lastmod>2019-04-08T16:45:33+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190405/</loc>
+    <loc>http://www.sayaka.work/post/190405.html</loc>
     <lastmod>2019-04-05T23:24:36+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190404/</loc>
+    <loc>http://www.sayaka.work/post/190404.html</loc>
     <lastmod>2019-04-04T23:23:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190403/</loc>
+    <loc>http://www.sayaka.work/post/190403.html</loc>
     <lastmod>2019-04-03T23:23:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190402/</loc>
+    <loc>http://www.sayaka.work/post/190402.html</loc>
     <lastmod>2019-04-02T23:22:33+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190401/</loc>
+    <loc>http://www.sayaka.work/post/190401.html</loc>
     <lastmod>2019-04-01T23:21:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190329/</loc>
+    <loc>http://www.sayaka.work/post/190329.html</loc>
     <lastmod>2019-03-29T23:20:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190328/</loc>
+    <loc>http://www.sayaka.work/post/190328.html</loc>
     <lastmod>2019-03-28T23:19:47+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190327/</loc>
+    <loc>http://www.sayaka.work/post/190327.html</loc>
     <lastmod>2019-03-27T22:57:27+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190326/</loc>
+    <loc>http://www.sayaka.work/post/190326.html</loc>
     <lastmod>2019-03-26T22:57:27+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190325/</loc>
+    <loc>http://www.sayaka.work/post/190325.html</loc>
     <lastmod>2019-03-25T22:53:10+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/190324/</loc>
+    <loc>http://www.sayaka.work/post/190324.html</loc>
     <lastmod>2019-03-24T22:36:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/post/mapbox_qs/</loc>
+    <loc>http://www.sayaka.work/categories.html</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.sayaka.work/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.sayaka.work/tags/</loc>
+    <loc>http://www.sayaka.work/tags.html</loc>
     <priority>0</priority>
   </url>
   
