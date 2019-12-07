@@ -100,18 +100,65 @@
 <p>とりあえずKMLをダウンロードし、<a href="https://tool.stabucky.com/gmap_kml2csv.htm">CSVに変換</a>しました。
 ２列目が名前で、４列目が経度で、５列目が緯度っぽいです。
 面倒なのでこのまま使います。
-| 0     | 茨城1 かつら   | ﻿id: 8001name: かつらlat: 36.5449685lng: 140.3330587     | 140.3330587   | 36.5449685    | 0     |
-|&mdash;    |&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;   |&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;    |&mdash;&mdash;&mdash;&mdash;-  |&mdash;&mdash;&mdash;&mdash;   |&mdash;    |
-| 1     | 茨城2 みわ    | ﻿id: 8002name: みわlat: 36.6558574lng: 140.2800036  | 140.2800036   | 36.6558574    | 0     |
-| 2     | 茨城3 さとみ   | ﻿id: 8003name: さとみlat: 36.7057462lng: 140.5096817     | 140.5096817   | 36.7057462    | 0     |
-| 3     | 茨城4 さかい   | ﻿id: 8004name: さかいlat: 36.102676lng: 139.795303   | 139.795303    | 36.102676     | 0     |
-| 4     | 茨城5 奥久慈だいご    | ﻿id: 8005name: 奥久慈だいごlat: 36.7685851lng: 140.3592347  | 140.3592347   | 36.7685851    | 0     |</p>
+ファイル名は、michinoeki.csvとします。</p>
+
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>茨城1 かつら</th>
+<th>﻿id: 8001name: かつらlat: 36.5449685lng: 140.3330587</th>
+<th>140.3330587</th>
+<th>36.5449685</th>
+<th>0</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>茨城2 みわ</td>
+<td>﻿id: 8002name: みわlat: 36.6558574lng: 140.2800036</td>
+<td>140.2800036</td>
+<td>36.6558574</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>茨城3 さとみ</td>
+<td>﻿id: 8003name: さとみlat: 36.7057462lng: 140.5096817</td>
+<td>140.5096817</td>
+<td>36.7057462</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>茨城4 さかい</td>
+<td>﻿id: 8004name: さかいlat: 36.102676lng: 139.795303</td>
+<td>139.795303</td>
+<td>36.102676</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>茨城5 奥久慈だいご</td>
+<td>﻿id: 8005name: 奥久慈だいごlat: 36.7685851lng: 140.3592347</td>
+<td>140.3592347</td>
+<td>36.7685851</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
 <h2 id="巡回セールスマン問題って何">巡回セールスマン問題って何？</h2>
 
 <p>今回はアルゴリズムとかに特にこだわりないので、<a href="https://tony-mooori.blogspot.com/2016/02/tsppython.html">もりとにーのブログ: 巡回セールスマン問題を蟻コロニー最適化と遺伝的アルゴリズムで解いてみる[Python]</a></p>
 
-<p>これをtspari.pyと言う名前で保存してください。</p>
+<p>これをtspari.pyと言う名前で保存してください。
+TSPのアルゴリズムの比較は色んなとこで書かれているので、ここでは省きます。</p>
 
 <h2 id="実際にやってみよう">実際にやってみよう</h2>
 
@@ -124,7 +171,7 @@ import numpy as np
 import tspari
 
 #データ読み込み
-df = pd.read_csv(&quot;michi1206.csv&quot;, header=None)
+df = pd.read_csv(&quot;michinoeki.csv&quot;, header=None)
 
 # 何トリップで道の駅を回りたいか
 trip = 10
@@ -163,12 +210,15 @@ for t in range(trip):
 
 </code></pre>
 
-<p>googlemap0.csvからgooglemap9.csvまでのファイルができると思います。
-これをあとはマイマップに登録したら終わりです。</p>
+<p>このコードを実行すると、googlemap0.csvからgooglemap9.csvまでのファイルができると思います。
+これをあとはGoogleのマイマップに登録したら終わりです。
+マイマップの登録方法の説明は省きます。</p>
 
 <h3 id="結果">結果</h3>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uD9JAA3C9_FcDfvNkPbtPIJdgyoY3Ksr" width="640" height="480"></iframe>
+<p>このように地図に表示することができ、いつもGoggleMapアプリをナビとして利用して旅行しているので、そのままルート検索できるのがすごく便利でした。
+Mapboxも利用してみましたが、使い慣れているという点でGoogleを利用してます。
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uD9JAA3C9_FcDfvNkPbtPIJdgyoY3Ksr" width="640" height="480"></iframe></p>
 
 <h2 id="まとめ">まとめ</h2>
 
