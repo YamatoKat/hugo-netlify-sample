@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.55.5" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="新婚夫婦日記">
+<title>道の駅旅行計画 - 新婚夫婦日記</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="/"><img src="/images/logo.jpg" width="60" height="60" alt="新婚夫婦日記"></a>
+		</div>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">道の駅旅行計画</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2019-12-06">December 06, 2019</time></span>
+			<section itemprop="entry-text">
+				
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>この記事は<a href="https://adventar.org/calendars/4324">SB-AI Advent Calendar 2019</a>の16日目で、某社でAIやBlockchain関連のスタートアップの技術評価とかしてます。
+今回は業務とは一切関係のない私の趣味を紹介させてください。</p>
+
+<h2 id="道の駅スタンプラリー知っていますか">道の駅スタンプラリー知っていますか？</h2>
+
+<p>さて、みなさん道の駅スタンプラリーってご存知ですか？
+ドライブが趣味で、週末にはいつもどこかを道を走ってます。
+東京4年目ともなると、大抵の観光地は走行していて面白みがないなあと感じていた時に、偶然立ち寄った道の駅で、このスタンプラリーブックを発見し制覇することにしました。</p>
+
+<h2 id="データの準備">データの準備</h2>
+
+<p>まずは、スタンプラリーの本に書いている道の駅の住所をタイプするのはしんどいので、道の駅の住所をググります。</p>
+
+<p>まずは公式の<a href="https://www.mlit.go.jp/road/Michi-no-Eki/list.html">道路：道の駅案内 - 国土交通省</a>から、XLSファイルをダウンロードしました。
+が、下表のように住所や緯度経度が含まれておらず、これでは使えません。</p>
+
+<table>
+<thead>
+<tr>
+<th>県名</th>
+<th>駅名</th>
+<th>登録回</th>
+<th>登録年月</th>
+<th>所在地</th>
+<th>ホームページアドレス</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>北海道</td>
+<td>三笠</td>
+<td>第1回</td>
+<td>H5.4</td>
+<td>三笠市</td>
+<td><a href="http://www.hokkaido-michinoeki.jp/michinoeki/172/">http://www.hokkaido-michinoeki.jp/michinoeki/172/</a></td>
+</tr>
+
+<tr>
+<td>北海道</td>
+<td>スタープラザ　芦別</td>
+<td>第1回</td>
+<td>H5.4</td>
+<td>芦別市</td>
+<td><a href="http://www.hokkaido-michinoeki.jp/michinoeki/202/">http://www.hokkaido-michinoeki.jp/michinoeki/202/</a></td>
+</tr>
+
+<tr>
+<td>北海道</td>
+<td>南ふらの</td>
+<td>第1回</td>
+<td>H5.4</td>
+<td>空知郡南富良野町</td>
+<td><a href="http://www.hokkaido-michinoeki.jp/michinoeki/222/">http://www.hokkaido-michinoeki.jp/michinoeki/222/</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>真面目にやりたい方は、<a href="https://developers.google.com/places/web-service/intro?hl=ja">Places API</a>を使えば、緯度経度を取得可能です。</p>
+
+<p>めんどくさがり屋なので、ググってますと、<a href="https://www.google.com/maps/d/u/0/viewer?mid=1RcagQ4boLskSbkUJXQPPbgANBtY9fTYR&amp;ll=36.493857130316975%2C138.53257361329634&amp;z=8">下記の道の駅がプロットされたデータ</a>を発見しました。</p>
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1RcagQ4boLskSbkUJXQPPbgANBtY9fTYR" width="640" height="480"></iframe>
+
+<p>とりあえずKMLをダウンロードし、<a href="https://tool.stabucky.com/gmap_kml2csv.htm">CSVに変換</a>しました。
+２列目が名前で、４列目が経度で、５列目が緯度っぽいです。
+面倒なのでこのまま使います。
+| 0     | 茨城1 かつら   | ﻿id: 8001name: かつらlat: 36.5449685lng: 140.3330587     | 140.3330587   | 36.5449685    | 0     |
+|&mdash;    |&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;   |&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;    |&mdash;&mdash;&mdash;&mdash;-  |&mdash;&mdash;&mdash;&mdash;   |&mdash;    |
+| 1     | 茨城2 みわ    | ﻿id: 8002name: みわlat: 36.6558574lng: 140.2800036  | 140.2800036   | 36.6558574    | 0     |
+| 2     | 茨城3 さとみ   | ﻿id: 8003name: さとみlat: 36.7057462lng: 140.5096817     | 140.5096817   | 36.7057462    | 0     |
+| 3     | 茨城4 さかい   | ﻿id: 8004name: さかいlat: 36.102676lng: 139.795303   | 139.795303    | 36.102676     | 0     |
+| 4     | 茨城5 奥久慈だいご    | ﻿id: 8005name: 奥久慈だいごlat: 36.7685851lng: 140.3592347  | 140.3592347   | 36.7685851    | 0     |</p>
+
+<h2 id="巡回セールスマン問題って何">巡回セールスマン問題って何？</h2>
+
+<p>今回はアルゴリズムとかに特にこだわりないので、<a href="https://tony-mooori.blogspot.com/2016/02/tsppython.html">もりとにーのブログ: 巡回セールスマン問題を蟻コロニー最適化と遺伝的アルゴリズムで解いてみる[Python]</a></p>
+
+<p>これをtspari.pyと言う名前で保存してください。</p>
+
+<h2 id="実際にやってみよう">実際にやってみよう</h2>
+
+<pre><code>import pandas as pd 
+import matplotlib.pyplot as plt
+from pandas.tools import plotting
+from sklearn.cluster import KMeans # K-means
+from sklearn.decomposition import PCA
+import numpy as np
+import tspari
+
+#データ読み込み
+df = pd.read_csv(&quot;michi1206.csv&quot;, header=None)
+
+# 何トリップで道の駅を回りたいか
+trip = 10
+# トリップ数のグループに分割 (メルセンヌツイスターの乱数の種を 10 とする)
+kmeans_model = KMeans(n_clusters=trip, random_state=10).fit(df.iloc[:, 3:5])
+# 分類結果のラベルを取得
+labels = kmeans_model.labels_
+# labelsをdfの列に追加
+df['label'] = labels
+
+# labelsごとに、TSPする
+for t in range(trip):
+    temp = df[df['label'] == t]
+    name = temp[[1, 3, 4]]
+    csv = temp[[3, 4]]
+    csv.to_csv('csv_out.csv', index=False)
+
+    # 他の人のコードの仕様上ファイル読み込み
+    tsp = TSP(path=&quot;csv_out.csv&quot;)
+
+    # 蟻コロニー最適化
+    tsp.solve(n_agent=1000)
+
+    # GoogleMapで表示しやすいようにソートする
+    def func1(lst, value):
+        return [i for i, x in enumerate(lst) if x == value]
+    newindex = []
+    for i in range(len(tsp.result)):
+        newindex += func1(tsp.result, i)
+
+    name['newindex'] = newindex
+    name_s = name.sort_values('newindex', ascending=True)
+    name_s.to_csv('googlemap'+ str(t) + '.csv', index=False)
+
+
+
+</code></pre>
+
+<p>googlemap0.csvからgooglemap9.csvまでのファイルができると思います。
+これをあとはマイマップに登録したら終わりです。</p>
+
+<h3 id="結果">結果</h3>
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1uD9JAA3C9_FcDfvNkPbtPIJdgyoY3Ksr" width="640" height="480"></iframe>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>気が向いたらDwaveとかの量子コンピューターで実装します。
+来年のスタンラリー期間に向けて、<a href="https://flutter.dev">Flutter</a>を使って、アプリにします。
+最後までありがとうございました。</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			
+			
+		</div>
+		<div class="copyright">Copyright &copy; </div>
+	</footer>
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-146219040-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

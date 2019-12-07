@@ -6,10 +6,25 @@
     <description>Recent content in Posts on 新婚夫婦日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 12:11:48 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 12:11:48 +0900</lastBuildDate>
     
 	<atom:link href="http://www.sayaka.work/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>道の駅旅行計画</title>
+      <link>http://www.sayaka.work/post/191216.html</link>
+      <pubDate>Fri, 06 Dec 2019 12:11:48 +0900</pubDate>
+      
+      <guid>http://www.sayaka.work/post/191216.html</guid>
+      <description>はじめに この記事はSB-AI Advent Calendar 2019の16日目で、某社でAIやBlockchain関連のスタートアップの技術評価とかしてます。 今回は業務とは一切関係のない私の趣味を紹介させてください。
+道の駅スタンプラリー知っていますか？ さて、みなさん道の駅スタンプラリーってご存知ですか？ ドライブが趣味で、週末にはいつもどこかを道を走ってます。 東京4年目ともなると、大抵の観光地は走行していて面白みがないなあと感じていた時に、偶然立ち寄った道の駅で、このスタンプラリーブックを発見し制覇することにしました。
+データの準備 まずは、スタンプラリーの本に書いている道の駅の住所をタイプするのはしんどいので、道の駅の住所をググります。
+まずは公式の道路：道の駅案内 - 国土交通省から、XLSファイルをダウンロードしました。 が、下表のように住所や緯度経度が含まれておらず、これでは使えません。
+   県名 駅名 登録回 登録年月 所在地 ホームページアドレス     北海道 三笠 第1回 H5.4 三笠市 http://www.hokkaido-michinoeki.jp/michinoeki/172/   北海道 スタープラザ　芦別 第1回 H5.4 芦別市 http://www.hokkaido-michinoeki.jp/michinoeki/202/   北海道 南ふらの 第1回 H5.4 空知郡南富良野町 http://www.hokkaido-michinoeki.jp/michinoeki/222/    真面目にやりたい方は、Places APIを使えば、緯度経度を取得可能です。
+めんどくさがり屋なので、ググってますと、下記の道の駅がプロットされたデータを発見しました。
+ とりあえずKMLをダウンロードし、CSVに変換しました。 ２列目が名前で、４列目が経度で、５列目が緯度っぽいです。 面倒なのでこのまま使います。 | 0 | 茨城1 かつら | ﻿id: 8001name: かつらlat: 36.</description>
+    </item>
     
     <item>
       <title>青春１８切符の旅　神戸から東京</title>
