@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2019 YAMATO inc. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 16 Dec 2019 00:00:48 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 21:55:17 +0900</lastBuildDate>
     
 	<atom:link href="http://www.sayaka.work/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100Days100Projects Day1 Domain setting</title>
+      <link>http://www.sayaka.work/post/200420.html</link>
+      <pubDate>Mon, 20 Apr 2020 21:55:17 +0900</pubDate>
+      
+      <guid>http://www.sayaka.work/post/200420.html</guid>
+      <description>Introduction One day, my friend shared this article; 100 DAYS - 100 PROJECTS CHALLENGE with me and I was so influenced that I decided to start similar one. Today (Arp20 2020) is the first day to be remembered.
+Day1 Redirect to www Challenge My website cannot redirect to www.sayaka.com from sayaka.com at Apr20.
+What I did I purchased a domain from Onamae.com, so I can set up the transfer settings there.</description>
+    </item>
     
     <item>
       <title>道の駅の旅</title>
