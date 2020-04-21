@@ -6,11 +6,20 @@
     <description>Recent content in Posts on 新婚夫婦日記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>2019 YAMATO inc. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 20 Apr 2020 21:55:17 +0900</lastBuildDate>
+    <copyright>2020 YAMATO inc. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 21 Apr 2020 22:15:58 +0900</lastBuildDate>
     
 	<atom:link href="http://www.sayaka.work/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>100Days100Projects Day2 Google Adsense</title>
+      <link>http://www.sayaka.work/post/200421.html</link>
+      <pubDate>Tue, 21 Apr 2020 22:15:58 +0900</pubDate>
+      
+      <guid>http://www.sayaka.work/post/200421.html</guid>
+      <description> Day2 Google Adsense Challenge What I did </description>
+    </item>
     
     <item>
       <title>100Days100Projects Day1 Domain setting</title>
